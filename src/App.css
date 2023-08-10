@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background: #232427;
+  --color: #ffffff;
+  --primary-color: #0f3460;
+  --blue: #2196f3;
+  --red: #e91e63;
+  --green: #23c186;
+}
+
+body {
+  background: var(--background);
+  color: var(--color);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.header {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  text-align: center;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  font-family: "Rocher";
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.header .btnarea {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@font-palette-values --Grays {
+  font-family: Rocher;
+  base-palette: 9;
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}
+
+@font-palette-values --Mint {
+  font-family: Rocher;
+  base-palette: 7;
+}
+
+.grays {
+  font-palette: --Grays;
+}
+
+.purples {
+  font-palette: --Purples;
+}
+
+.mint {
+  font-palette: --Mint;
+}
+
+.mybtn {
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--color);
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  border: none;
+}
+
+.mybtn:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: var(--color);
+  color: var(--background);
+}
+
+.mybtn.btn-blue {
+  background: var(--blue);
+}
+
+.mybtn.btn-red {
+  background: var(--red);
+}
+
+.mybtn.btn-green {
+  background: var(--green);
+}
